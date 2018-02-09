@@ -1,6 +1,6 @@
 # BlindAlert
 
-![BlindAlert](https://preview.ibb.co/jSdgDx/blind_Alert.png)
+![BlindAlert](https://image.ibb.co/iHB1Dx/blind_Alert.png)
 
 Easy Blind Cross-site Scripting testing tool.
 
