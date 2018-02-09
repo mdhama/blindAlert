@@ -18,13 +18,18 @@ To install BlindAlert, simply clone the repo
 git clone https://github.com/mdhama/blindAlert.git
 ```
 
-To Run on local server 
+To Run on local server
 ```
 cd blindAlert
 php -S localhost:80
 ```
-
 Now open http://localhost in your browser.
+
+Over the internet using ngrok
+```
+./ngrok http 80
+```
+
 
 ## Uses
 
